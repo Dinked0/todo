@@ -1,0 +1,54 @@
+<!doctype html>
+  <html lang = "en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Second Page</title>   
+    <link rel="icon" type="image/png" href="./icon/gundam.png"/>
+</head>
+
+
+
+<body>
+    <form action="./payment_page" method = "get">
+    <h2><strong>Choose your stay:</strong></h2>
+    
+    <fieldset>
+        <legend>Choose room (Required): </legend> 
+        <div>
+            <input type="radio" name = "hotel" id = "hotel1" value="economy" />
+            <label for="hotel1">Standard suite(+10$)</label>
+            <input type="radio" name = "hotel" id = "hotel2" value="deluxe" />
+            <label for="hotel2">Deluxe suite(+20$)</label>
+            <input type="radio" name = "hotel" id = "hotel3" value="mega" disabled/>
+            <label for="hotel3">Mega suite(+40$)</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Choose classes:</legend>
+        <div>
+            <input type="checkbox" name="class" id="class_1" value="yoga"/>
+            <label for="class_1">Yoga class</label>
+            <input type="checkbox" name="class" id="class_2" value="computer"/>
+            <label for="class_2">Computer class</label>
+            <input type="checkbox" name="class" id="class_3" value="gaming"/>
+            <label for="class_3">Gaming class</label>
+        </div>
+    </fieldset>
+    <p>
+        <label>Choose mode of transport:</label>
+        <select name="transport" id="transport">
+            <option value="">--Please choose an option--</option>
+            <option value="car">Car</option>
+            <option value="bike">Bike</option>
+            <option value="cycle">Cycle</option>
+            <option value="plane">Airplane</option>
+            <option value="foot">Walk</option>
+        </select>
+    </p>
+    <p>
+        <button type="submit">Proceed to payment</button>
+    </p>
+    </form>
+  <br />
+</body>
+</html>
